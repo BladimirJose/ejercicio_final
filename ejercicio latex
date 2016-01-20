@@ -1,0 +1,128 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\author{Bladimir De La Hoz Rosales}
+\title{Trabajo final}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\newpage
+
+
+\begin{center}
+Introducción 
+\end{center}
+
+\begin{flushleft}
+El presente documento, consiste en un ejercicio sobre el aprendizaje de LATEX como herramienta para la publicación de documentos científicos. El documento se encuentra compuesto de 5 partes, en las que se pueden observar, una lista, una tabla, una imagen,formula,y la revisión  bibliográfica. Es un ejercicio muy sencillo toda vez que el autor apenas se encuentra aprendiendo el uso de la herramienta.      
+
+\end{flushleft}
+\newpage
+
+\part{Lista de los principales países de América Latina}
+
+\begin{enumerate}
+\item MÉXICO
+ \item BRASIL
+ \item COLOMBIA 
+ \item ARGENTINA
+ \item ECUADOR
+ \item CHILE
+ \item URUGUAY
+ \item PARAGUAY
+ \item BOLIVIA
+ \item PERÚ
+\end{enumerate}
+
+
+
+\newpage
+
+
+\part{ Población actual principales Países de Latino-américa}
+
+\begin{tabular}{|c||c||}
+\hline 
+\rule[-1ex]{0pt}{2.5ex} PAÍS & POBLACIÓN EN MILL DE HABITA  \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} BRASIL & 206.151.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} MEXICO & 122.273.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} COLOMBIA & 48.782.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} ARGENTINA & 43.590.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} PERU & 31.490.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} VENEZUELA & 31.029.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} CHILE & 18.192.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} ECUADOR & 16.529.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} BOLIVIA & 10.985.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} PARAGUAY & 6.855.000 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} URUGUAY & 3.480.000 \\  
+
+\end{tabular} 
+
+Información tomada de https://es.wikipedia.org/wiki/
+\newpage
+
+\part{GRAFICO: Crecimiento Económico principales países de Latino-América}
+   
+\begin{figure}[htb]
+\centering
+\graphicspath{ {images/} }
+\includegraphics[width=1\textwidth]{PIB2}
+\caption{PIB América Latina}
+\label{fig:PIB}
+\end{figure}
+
+\newpage
+\part{Formula} 
+
+A continuación se general una formula: 
+
+\begin{displaymath}
+\frac{\displaystyle
+\sum_{i=1}^n(x_i-\overline x)(y_i-\overline y)}
+{\displaystyle\biggl[\sum_{i=1}^n(x_i-\overline x)^2\sum_{i=1}^n(y_i-\overline y)^2
+\biggr]^{1/2}}
+\end{displaymath}
+\end{document}
+\newpage
+
+\bibliographystyle{Miestilo}
+\bibliography{ejercicio}
+\cite{petrei1987gasto}
+\cite{cardoso1996dependencia}  
+
+    
+@book{petrei1987gasto,
+  title={El gasto p{\'u}blico social y sus efectos distributivos: un examen comparativo de cinco pa{\'\i}ses de Am{\'e}rica Latina},
+  author={Petrei, A Humberto},
+  year={1987},
+  publisher={Programa de estudios Conjuntos sobre Integraci{\'o}n Econ{\'o}mica Latinoamericana.}
+}
+
+@book{cardoso1996dependencia,
+  title={Dependencia y desarrollo en Am{\'e}rica Latina: ensayo de interpretaci{\'o}n sociol{\'o}gica},
+  author={Cardoso, Fernando Henrique and Faletto, Enzo},
+  year={1996},
+  publisher={Siglo XXI}
+}
+
+  
+\end{document}
